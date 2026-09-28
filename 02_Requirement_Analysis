@@ -1,0 +1,60 @@
+# Requirement Analysis
+
+## Functional Requirements
+
+The system should:
+
+1. Create a test user named **EEE User**.
+2. Create custom roles:
+   - `bb1`
+   - `bb2`
+   - `bb3`
+   - `bb4`
+3. Create the custom table `u_institution_details`.
+4. Add required fields to the table.
+5. Create records with different branch values.
+6. Configure READ ACL.
+7. Configure CREATE ACL.
+8. Configure WRITE ACL.
+9. Configure DELETE ACL.
+10. Allow administrators full access.
+11. Test each ACL using appropriate users and roles.
+
+## Table Requirements
+
+The Institution Details table contains:
+
+| Field | Type |
+|---|---|
+| Student Roll Number | Auto Number |
+| Student Name | Reference – User |
+| Faculty Name | Reference – User |
+| Branch | Choice |
+| Email | String |
+| Phone Number | String |
+| Description | Multi String |
+
+## Branch Choices
+
+- ECE
+- EEE
+- CSE
+
+## Access Requirements
+
+| Operation | Required Role |
+|---|---|
+| READ | `bb1` |
+| CREATE | `bb2` |
+| WRITE | `bb3` |
+| DELETE | `bb4` |
+| Administrator | Full Access |
+
+## Project Team
+
+**Team Leader:** Sakthi Shrinidhi C
+
+**Team Members:**
+- Meenakshi S
+- K Srividhya
+- Swarna Priya A
