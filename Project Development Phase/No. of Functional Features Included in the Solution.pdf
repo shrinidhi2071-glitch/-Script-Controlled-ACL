@@ -1,0 +1,69 @@
+# No. of Functional Features Included in the Solution
+
+## 1. Introduction
+
+The project includes multiple functional features to implement secure and controlled access to institution records in ServiceNow.
+
+## 2. Functional Features
+
+### 2.1 User Management
+
+Users can be created and configured in ServiceNow for access-control testing.
+
+### 2.2 Role Management
+
+Roles can be created and assigned to users according to the required permissions.
+
+### 2.3 Table Management
+
+A custom table named `u_institution_details` is created to store institution and student-related information.
+
+### 2.4 Field Management
+
+The table contains the required fields, including Student Roll Number, Student Name, Faculty Name, Branch, Email, Phone Number, and Description.
+
+### 2.5 Record Management
+
+Sample records can be created with different branch values for testing the access-control rules.
+
+### 2.6 READ Access Control
+
+The READ ACL controls whether users can view the applicable records.
+
+### 2.7 CREATE Access Control
+
+The CREATE ACL controls whether users can create new records.
+
+### 2.8 WRITE Access Control
+
+The WRITE ACL controls whether users can modify existing records.
+
+### 2.9 DELETE Access Control
+
+The DELETE ACL controls whether users can delete records.
+
+### 2.10 Branch-Based Restriction
+
+The Branch field is used as part of the configured record-access conditions.
+
+The project uses:
+
+* ECE
+* EEE
+* CSE
+
+### 2.11 Administrator Access
+
+Administrators have the required access to manage the system and its security configuration.
+
+### 2.12 Access Testing
+
+The configured ACLs are tested using different users, roles, operations, and record conditions.
+
+## 3. Feature Summary
+
+The solution includes **12 major functional features** covering user management, role management, data management, CRUD access control, branch-based restriction, administrator access, and testing.
+
+## 4. Expected Result
+
+These features work together to provide a structured and controlled record-access system in ServiceNow.
