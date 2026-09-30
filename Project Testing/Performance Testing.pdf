@@ -1,0 +1,48 @@
+# Performance Testing
+
+## 1. Testing Objective
+
+The objective of testing is to verify that the configured ACLs correctly enforce the required access permissions for the `u_institution_details` table.
+
+## 2. READ Testing
+
+The READ ACL is tested using users with different roles and access conditions.
+
+The test verifies whether users can view the records they are permitted to access.
+
+## 3. CREATE Testing
+
+The CREATE ACL is tested to verify whether authorized users can create new institution records and unauthorized users are prevented from doing so.
+
+## 4. WRITE Testing
+
+The WRITE ACL is tested by attempting to modify existing records with users having different permissions.
+
+The test verifies that only permitted users can modify records.
+
+## 5. DELETE Testing
+
+The DELETE ACL is tested to verify whether users with the required permissions can delete records.
+
+Unauthorized users should not be able to delete restricted records.
+
+## 6. Unauthorized Access Testing
+
+Users without the required permissions are tested against the configured ACLs.
+
+The system should deny operations when the applicable ACL requirements are not satisfied.
+
+## 7. Administrator Testing
+
+Administrator access is tested to verify that administrators can perform the required management and configuration activities.
+
+## 8. Testing Result
+
+The ACLs are evaluated for each operation and the access decision is based on the configured roles and conditions.
+
+The testing confirms that the project provides controlled access to the institution records.
+
+## 9. Conclusion
+
+Performance and functional testing help verify that the Script-Controlled ACL solution operates consistently and enforces the intended access-control rules.
+
