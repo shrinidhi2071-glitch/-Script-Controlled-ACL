@@ -1,0 +1,72 @@
+# Sample Project Documentation
+
+## 1. Project Title
+
+**Script-Controlled ACL – Restrict Record Access Based on Field Value**
+
+## 2. Project Objective
+
+The objective of the project is to implement a secure record-access mechanism in ServiceNow using Access Control Lists (ACLs), user roles, and field-based conditions.
+
+## 3. Problem Statement
+
+Users may require different levels of access to institution records. Providing unrestricted access can allow users to view, create, modify, or delete records beyond their assigned permissions.
+
+Therefore, a controlled access mechanism is required.
+
+## 4. Proposed Solution
+
+The proposed solution uses ServiceNow ACLs to control access to the `u_institution_details` table.
+
+Separate ACLs are configured for:
+
+* READ
+* CREATE
+* WRITE
+* DELETE
+
+The ACL logic uses the configured roles and record conditions to determine whether an operation should be permitted.
+
+## 5. Technology Used
+
+* ServiceNow
+* Access Control Lists (ACLs)
+* JavaScript
+* ServiceNow Roles
+* Custom Tables
+* Branch-based field conditions
+
+## 6. Implementation
+
+A custom table named `u_institution_details` is created with fields for student and institution information.
+
+The **Branch** field contains:
+
+* ECE
+* EEE
+* CSE
+
+Users and roles are created, followed by the configuration of the required ACLs.
+
+## 7. Testing
+
+The solution is tested using different users and operations.
+
+The following operations are verified:
+
+* Record viewing
+* Record creation
+* Record modification
+* Record deletion
+* Unauthorized access
+* Administrator access
+
+## 8. Project Outcome
+
+The project provides a structured access-control mechanism for institution records.
+
+The configured ACLs help ensure that users can perform only the operations permitted by the defined security rules.
+
+## 9. Conclusion
+
+The Script-Controlled ACL solution demonstrates how ServiceNow security features can be used to implement role-based and field-based record access control.
