@@ -1,0 +1,74 @@
+# Technology Stack
+
+## 1. Introduction
+
+The project uses ServiceNow platform features and JavaScript-based ACL scripting to implement controlled access to institution records.
+
+## 2. ServiceNow
+
+ServiceNow is the primary platform used to develop and test the project.
+
+It provides the environment for:
+
+* User management
+* Role management
+* Custom table creation
+* Record management
+* ACL configuration
+* Security testing
+
+## 3. Access Control Lists (ACLs)
+
+ServiceNow ACLs are used to control access to records and operations.
+
+The project implements ACLs for:
+
+* READ
+* CREATE
+* WRITE
+* DELETE
+
+## 4. JavaScript
+
+JavaScript is used to implement the script-based access-control logic.
+
+The script can evaluate conditions such as the user's role and other record-related requirements before allowing access.
+
+## 5. ServiceNow Roles
+
+Roles are used to identify the permissions assigned to different users.
+
+The project uses roles as part of its access-control mechanism.
+
+## 6. Custom Table
+
+A custom table named:
+
+`u_institution_details`
+
+is created to store student and institution-related information.
+
+## 7. Branch Field
+
+The **Branch** field is used as one of the record-level conditions.
+
+The configured branch choices are:
+
+* ECE
+* EEE
+* CSE
+
+## 8. Technology Summary
+
+| Technology / Feature | Purpose                      |
+| -------------------- | ---------------------------- |
+| ServiceNow           | Project development platform |
+| ACL                  | Access control               |
+| JavaScript           | Script-based security logic  |
+| Roles                | User permission management   |
+| Custom Table         | Store institution details    |
+| Branch Field         | Field-based access condition |
+
+## 9. Conclusion
+
+The selected technology stack provides the required platform, security mechanisms, scripting capability, and data structure for implementing the Script-Controlled ACL solution.
