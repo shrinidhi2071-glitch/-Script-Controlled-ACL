@@ -1,0 +1,53 @@
+# Scalability & Future Plan
+
+## 1. Introduction
+
+The Script-Controlled ACL solution can be extended in the future to support additional users, roles, branches, tables, and security requirements.
+
+## 2. Additional Branches
+
+More branch values can be added to the system when required.
+
+For example, additional academic or organizational branches can be introduced and included in the access-control conditions.
+
+## 3. Additional Roles
+
+New roles can be created for different categories of users.
+
+This allows the system to support more detailed permission requirements.
+
+## 4. Additional Tables
+
+The same ACL-based approach can be applied to other ServiceNow tables.
+
+This can help maintain consistent security controls across multiple applications and datasets.
+
+## 5. Advanced Conditions
+
+The ACL logic can be extended to evaluate additional record fields and user-related conditions.
+
+This can provide more detailed control over record access.
+
+## 6. Automated Testing
+
+Automated testing can be introduced to verify ACL behavior for different users, roles, operations, and record conditions.
+
+This can reduce manual testing effort and improve consistency.
+
+## 7. Future Integration
+
+The solution can potentially be integrated with other ServiceNow applications and workflows where controlled record access is required.
+
+## 8. Long-Term Scope
+
+Future improvements may include:
+
+* More detailed role-based permissions
+* Additional field-based restrictions
+* Automated security testing
+* Integration with other ServiceNow modules
+* Centralized access-control management
+
+## 9. Conclusion
+
+The project provides a foundation that can be expanded as the organization's access-control requirements grow. The modular ACL approach makes it possible to introduce additional security rules without redesigning the entire solution.
