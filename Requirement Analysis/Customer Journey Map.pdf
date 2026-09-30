@@ -1,0 +1,38 @@
+Customer Journey Map
+1. Introduction
+
+The Customer Journey Map describes the steps followed by a user while accessing and working with institution records in the ServiceNow system.
+
+2. User Login
+
+The user logs into the ServiceNow application using valid credentials.
+
+3. Access Request
+
+The user attempts to access the u_institution_details table and its records.
+
+4. Permission Verification
+
+ServiceNow checks the user's assigned roles and determines whether the user has the required permissions.
+
+5. Record Evaluation
+
+The ACL evaluates the requested operation and the relevant record information, including the Branch field.
+
+6. Access Decision
+
+Based on the configured ACL rules, ServiceNow determines whether the requested operation should be allowed or denied.
+
+7. Record Operation
+
+If access is granted, the user can perform the permitted operation such as READ, CREATE, WRITE, or DELETE.
+
+If permission is not available, the requested operation is denied.
+
+8. Completion
+
+The user completes the permitted activity, while ServiceNow maintains the defined access-control restrictions.
+
+9. Journey Flow
+
+Login → Access Request → Permission Verification → Record Evaluation → Access Decision → Record Operation → Completion
