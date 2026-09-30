@@ -1,0 +1,62 @@
+# Project Executable Files
+
+## 1. Project Platform
+
+The project is developed and executed using the **ServiceNow platform**.
+
+## 2. Project Components
+
+The main executable components of the project are configured within the ServiceNow instance.
+
+These include:
+
+* Users
+* Roles
+* Custom Table
+* Table Fields
+* Sample Records
+* READ ACL
+* CREATE ACL
+* WRITE ACL
+* DELETE ACL
+
+## 3. Custom Table
+
+The primary table used by the project is:
+
+`u_institution_details`
+
+This table stores the student and institution-related records required for testing the access-control solution.
+
+## 4. ACL Components
+
+The project contains separate ACL configurations for:
+
+* READ
+* CREATE
+* WRITE
+* DELETE
+
+These ACLs control access to the table according to the configured security requirements.
+
+## 5. Execution Process
+
+The project can be executed and tested through the ServiceNow instance by:
+
+1. Logging into ServiceNow.
+2. Creating or selecting the required users.
+3. Assigning the required roles.
+4. Opening the `u_institution_details` table.
+5. Creating and viewing sample records.
+6. Testing the configured CRUD operations.
+7. Verifying the ACL access decisions.
+
+## 6. Execution Result
+
+When the project is executed, ServiceNow evaluates the configured ACL rules before allowing the requested operation.
+
+Authorized operations are permitted, while operations that do not satisfy the required access conditions are restricted.
+
+## 7. Conclusion
+
+The executable project components are implemented within ServiceNow and can be tested directly through the configured users, roles, table, records, and ACLs.
