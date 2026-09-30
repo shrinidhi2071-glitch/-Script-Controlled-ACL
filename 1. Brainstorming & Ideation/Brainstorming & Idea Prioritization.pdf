@@ -1,0 +1,68 @@
+Brainstorming & Idea Prioritization
+1. Project Background
+
+The project focuses on implementing a secure and controlled record access system in ServiceNow using Script-Controlled Access Control Lists (ACLs).
+
+The system is designed to restrict access to institution records based on user roles and the value of the Branch field.
+
+2. Problem Identification
+
+During the brainstorming process, the following problems were identified:
+
+Unauthorized users may access institution records.
+Users may need access to only specific branch-related records.
+Different users require different levels of permissions.
+Users should not be allowed to perform operations beyond their assigned responsibilities.
+Administrators require complete access to manage the records and security configuration.
+3. Ideas Considered
+
+The following approaches were considered:
+
+Role-Based Access Control
+
+Access can be provided according to the roles assigned to users.
+
+Branch-Based Access Control
+
+Access can be restricted according to the Branch field of a record.
+
+Script-Controlled ACL
+
+ServiceNow scripts can be used to implement customized access-control conditions.
+
+Separate CRUD ACLs
+
+Different ACLs can be created for:
+
+READ
+CREATE
+WRITE
+DELETE
+4. Selected Idea
+
+The selected project idea is:
+
+Script-Controlled ACL – Restrict Record Access Based on Field Value
+
+The solution combines user roles and record field values to control access to institution records.
+
+5. Reason for Selecting the Idea
+
+The idea was selected because it:
+
+Provides controlled access to records.
+Helps protect institutional information.
+Supports different permissions for different users.
+Allows field-based record restrictions.
+Supports separate READ, CREATE, WRITE, and DELETE permissions.
+Allows administrators to retain full access.
+6. Expected Benefits
+Improved record security.
+Reduced unauthorized access.
+Controlled user permissions.
+Better management of institutional records.
+Flexible access-control configuration.
+Possibility of extending the solution to other tables and requirements.
+7. Project Objective
+
+The main objective is to develop a ServiceNow ACL solution that ensures users can access and manage records only according to their assigned permissions and the defined branch-based access requirements.
