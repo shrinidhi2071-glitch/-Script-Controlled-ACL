@@ -1,0 +1,66 @@
+# Proposed Solution
+
+## 1. Solution Overview
+
+The proposed solution implements a **Script-Controlled ACL** in ServiceNow to restrict access to records based on user permissions and field values.
+
+The solution is developed using a custom table named `u_institution_details`.
+
+## 2. User Management
+
+Users are created in ServiceNow and assigned the appropriate roles required for the project.
+
+## 3. Role Management
+
+Roles are created to provide controlled permissions to different users.
+
+The assigned roles are considered during ACL evaluation.
+
+## 4. Record Management
+
+The `u_institution_details` table stores student and institution-related information.
+
+The table includes fields such as:
+
+* Student Roll Number
+* Student Name
+* Faculty Name
+* Branch
+* Email
+* Phone Number
+* Description
+
+## 5. Access Management
+
+Access Control Lists are configured to control different operations on the table.
+
+The project includes:
+
+* READ ACL
+* CREATE ACL
+* WRITE ACL
+* DELETE ACL
+
+## 6. Branch-Based Restriction
+
+The **Branch** field is used as part of the access-control conditions.
+
+The available branch values are:
+
+* ECE
+* EEE
+* CSE
+
+The ACL logic evaluates the configured conditions before allowing access to the relevant records.
+
+## 7. Administrator Access
+
+Administrators are provided with the required access to manage users, roles, records, and security configurations.
+
+## 8. Expected Result
+
+The proposed solution provides controlled access to institution records and ensures that users can perform only the operations permitted by the configured ACL rules.
+
+## 9. Conclusion
+
+The solution combines ServiceNow roles, ACLs, JavaScript scripting, and field-based conditions to create a secure and manageable record-access system.
