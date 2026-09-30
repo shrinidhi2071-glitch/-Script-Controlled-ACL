@@ -1,0 +1,80 @@
+# Solution Requirements
+
+## 1. Introduction
+
+The Solution Requirements define the functional and non-functional requirements needed to implement the Script-Controlled ACL project in ServiceNow.
+
+## 2. Functional Requirements
+
+### 2.1 User Management
+
+The system should allow authorized administrators to create and manage users required for the project.
+
+### 2.2 Role Management
+
+The system should support the creation and assignment of appropriate roles to users.
+
+### 2.3 Table Management
+
+A custom table named `u_institution_details` should be created to store institution and student-related information.
+
+### 2.4 Field Management
+
+The table should contain the required fields, including:
+
+* Student Roll Number
+* Student Name
+* Faculty Name
+* Branch
+* Email
+* Phone Number
+* Description
+
+### 2.5 Access Control
+
+ACLs should be configured to control access to records based on the user's permissions and defined conditions.
+
+### 2.6 Branch-Based Restriction
+
+The system should support restricting record access based on the value of the **Branch** field.
+
+The project uses branch values such as:
+
+* ECE
+* EEE
+* CSE
+
+### 2.7 CRUD Operations
+
+Separate access controls should be implemented for:
+
+* READ
+* CREATE
+* WRITE
+* DELETE
+
+### 2.8 Administrator Access
+
+Administrators should have the required access to manage the table, records, and security configuration.
+
+## 3. Non-Functional Requirements
+
+### 3.1 Security
+
+The system should prevent unauthorized users from accessing or modifying restricted records.
+
+### 3.2 Reliability
+
+ACL rules should consistently enforce the defined access permissions.
+
+### 3.3 Maintainability
+
+The ACL configuration and scripts should be organized so that they can be understood and maintained easily.
+
+### 3.4 Usability
+
+Authorized users should be able to perform their permitted operations without unnecessary complexity.
+
+## 4. Expected Outcome
+
+The solution should provide controlled and secure access to the `u_institution_details` table while supporting role-based and branch-based access requirements.
