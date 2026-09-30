@@ -1,0 +1,61 @@
+Demonstration of Proposed Features
+1. Introduction
+
+The project demonstration explains the major features implemented in the ServiceNow Script-Controlled ACL solution.
+
+2. User Creation
+
+The demonstration begins by showing the creation of the required users in ServiceNow.
+
+The users are used to test different access permissions.
+
+3. Role Creation
+
+The required roles are created and assigned to the appropriate users.
+
+These roles are used as part of the ACL access-control mechanism.
+
+4. Table Creation
+
+A custom table named:
+
+u_institution_details
+
+is created to store student and institution-related information.
+
+5. Record Creation
+
+Sample records are created with different values in the Branch field.
+
+The available branch choices are:
+
+ECE
+EEE
+CSE
+6. READ Access
+
+The READ ACL is demonstrated by testing whether users can view records according to the configured access conditions.
+
+7. CREATE Access
+
+The CREATE ACL is demonstrated by testing whether authorized users can create new records.
+
+8. WRITE Access
+
+The WRITE ACL is demonstrated by attempting to modify existing records using users with different permissions.
+
+9. DELETE Access
+
+The DELETE ACL is demonstrated by testing whether users with the required permissions can delete records.
+
+10. Administrator Access
+
+Administrator access is demonstrated to verify that administrators can perform the required management activities.
+
+11. Final Output
+
+The final demonstration shows that the configured ACLs control access to the institution records according to the defined roles and conditions.
+
+12. Conclusion
+
+The demonstration provides a practical view of the project's implementation and shows how ServiceNow ACLs can be used to control record-level access.
