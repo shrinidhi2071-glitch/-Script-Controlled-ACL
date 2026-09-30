@@ -1,0 +1,60 @@
+# Code-Layout, Readability and Reusability
+
+## 1. Introduction
+
+The project follows an organized development approach to make the ServiceNow configuration and ACL scripts easy to understand, maintain, and reuse.
+
+## 2. Development Structure
+
+The project is organized into separate components for:
+
+* User creation
+* Role creation
+* Table creation
+* Table fields
+* Record creation
+* READ ACL
+* CREATE ACL
+* WRITE ACL
+* DELETE ACL
+
+This separation makes the project easier to manage and test.
+
+## 3. Organized Access Control
+
+Each CRUD operation is controlled through its respective ACL.
+
+This provides a clear structure for managing permissions and identifying the purpose of each access-control rule.
+
+## 4. Readability
+
+The ACL scripts are written using clear conditions and meaningful comments.
+
+The project avoids unnecessary complexity so that team members can understand the access-control logic during development and testing.
+
+## 5. Reusability
+
+The ACL-based approach can be reused for other ServiceNow tables and similar access-control requirements.
+
+The same structure can be extended by modifying:
+
+* Roles
+* Table names
+* Field conditions
+* Access requirements
+* ACL scripts
+
+## 6. Maintainability
+
+The organized ACL structure makes it easier to:
+
+* Identify individual permissions.
+* Modify access conditions.
+* Test specific operations.
+* Add new roles.
+* Add new access requirements.
+* Troubleshoot permission-related issues.
+
+## 7. Conclusion
+
+A structured code and configuration layout improves readability, reusability, and maintainability of the Script-Controlled ACL solution.
