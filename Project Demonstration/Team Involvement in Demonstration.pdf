@@ -1,0 +1,64 @@
+# Team Involvement in Demonstration
+
+## 1. Introduction
+
+All team members participate in the project demonstration by explaining and presenting the tasks assigned to them.
+
+## 2. Sakthi Shrinidhi C – Team Leader
+
+Responsibilities:
+
+* Coordinate the overall project demonstration.
+* Explain the project introduction and objective.
+* Demonstrate the CREATE ACL.
+* Explain the project outcome.
+* Coordinate the contributions of all team members.
+
+## 3. Meenakshi S
+
+Responsibilities:
+
+* Demonstrate User Creation.
+* Explain the user configuration process.
+* Demonstrate the WRITE ACL.
+* Explain how write access is controlled.
+
+## 4. K Srividhya
+
+Responsibilities:
+
+* Demonstrate Roles Creation.
+* Explain the role configuration.
+* Demonstrate the READ ACL.
+* Explain how read access is controlled.
+
+## 5. Swarna Priya A
+
+Responsibilities:
+
+* Demonstrate Table Creation.
+* Explain the table and field configuration.
+* Demonstrate the DELETE ACL.
+* Explain how delete access is controlled.
+
+## 6. Team Participation
+
+The team works together during:
+
+* Project introduction
+* Feature demonstration
+* ACL testing
+* Result explanation
+* Question and answer session
+
+Each member contributes to the demonstration based on their assigned responsibilities.
+
+## 7. Final Demonstration
+
+The complete demonstration covers:
+
+**User Creation → Roles Creation → Table Creation → ACL Configuration → Testing → Project Outcome**
+
+## 8. Conclusion
+
+The team demonstrates the project collaboratively, with each member explaining their assigned tasks and contributing to the overall presentation of the Script-Controlled ACL solution.
