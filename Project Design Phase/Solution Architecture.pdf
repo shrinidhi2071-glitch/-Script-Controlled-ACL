@@ -1,0 +1,65 @@
+# Solution Architecture
+
+## 1. Introduction
+
+The solution architecture describes the major components involved in implementing the Script-Controlled ACL solution in ServiceNow.
+
+## 2. User Layer
+
+Users interact with the ServiceNow application and request access to institution records.
+
+Users may perform operations only when the required permissions are available.
+
+## 3. Role Layer
+
+The role layer manages the permissions assigned to users.
+
+Roles are used by the ACL configuration to determine whether a user is authorized to perform a particular operation.
+
+## 4. Application Layer
+
+The ServiceNow platform provides the application environment for:
+
+* User management
+* Role management
+* Table management
+* Record management
+* ACL configuration
+
+## 5. Security Layer
+
+The security layer contains the Access Control Lists used to control access to the custom table.
+
+Separate ACLs are configured for:
+
+* READ
+* CREATE
+* WRITE
+* DELETE
+
+JavaScript scripting can be used within ACLs to implement the required access-control logic.
+
+## 6. Data Layer
+
+The data layer consists of the custom table:
+
+`u_institution_details`
+
+The table stores student and institution-related information, including the **Branch** field.
+
+## 7. Access Decision
+
+When a user requests an operation, ServiceNow evaluates the applicable ACL rules.
+
+The decision is based on the configured permissions and conditions.
+
+* If the conditions are satisfied, access is allowed.
+* If the conditions are not satisfied, access is denied.
+
+## 8. Architecture Flow
+
+**User Layer → Role Verification → ServiceNow Application → ACL Security Layer → Data Layer → Access Decision**
+
+## 9. Expected Result
+
+The architecture provides a structured security mechanism for controlling access to institution records while keeping user, role, application, security, and data components organized.
