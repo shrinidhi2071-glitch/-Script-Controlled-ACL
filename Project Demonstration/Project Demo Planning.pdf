@@ -1,0 +1,54 @@
+# Project Demo Planning
+
+## 1. Introduction
+
+The project demonstration is planned to explain the purpose, implementation, testing, and outcome of the Script-Controlled ACL solution.
+
+## 2. Problem Statement
+
+The demonstration begins by explaining the need for controlled access to institution records and the problems caused by unauthorized record access.
+
+## 3. Proposed Solution
+
+The team explains how ServiceNow ACLs, user roles, JavaScript, and field-based conditions are used to control access to the `u_institution_details` table.
+
+## 4. Implementation Demonstration
+
+The following implementation steps are demonstrated:
+
+1. User creation
+2. Role creation
+3. Custom table creation
+4. Field configuration
+5. Sample record creation
+6. READ ACL configuration
+7. CREATE ACL configuration
+8. WRITE ACL configuration
+9. DELETE ACL configuration
+
+## 5. Testing Demonstration
+
+The team demonstrates the ACL behavior using different users and access operations.
+
+The following operations are tested:
+
+* READ
+* CREATE
+* WRITE
+* DELETE
+
+Administrator access is also demonstrated.
+
+## 6. Project Result
+
+The demonstration shows how the configured ACLs control access to institution records based on the defined security requirements.
+
+## 7. Team Presentation
+
+The team members present their assigned implementation areas and explain the overall project workflow.
+
+The team leader coordinates the demonstration and explains the project outcome.
+
+## 8. Conclusion
+
+The demonstration provides a clear overview of the project's problem, solution, implementation, testing, and final result.
