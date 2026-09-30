@@ -1,0 +1,73 @@
+# Coding & Solution
+
+## 1. Introduction
+
+The project is implemented in ServiceNow using users, roles, a custom table, records, and Access Control Lists (ACLs).
+
+## 2. User Creation
+
+The required users are created in ServiceNow to test different access permissions.
+
+## 3. Role Creation
+
+The required roles are created and assigned to the appropriate users.
+
+These roles are used as part of the ACL access-control mechanism.
+
+## 4. Table Creation
+
+A custom table named:
+
+`u_institution_details`
+
+is created to store institution and student-related information.
+
+## 5. Table Fields
+
+The table contains the following fields:
+
+* **Student Roll Number** – Auto Number
+* **Student Name** – Reference to User
+* **Faculty Name** – Reference to User
+* **Branch** – Choice
+* **Email** – String
+* **Phone Number** – String
+* **Description** – Multi String
+
+The Branch field contains:
+
+* ECE
+* EEE
+* CSE
+
+## 6. READ ACL
+
+A READ ACL is configured to control which users can view records.
+
+The ACL evaluates the configured role and branch-related conditions before allowing access.
+
+## 7. CREATE ACL
+
+A CREATE ACL controls whether a user is allowed to create new records in the table.
+
+Only users satisfying the configured access requirements should be allowed to create records.
+
+## 8. WRITE ACL
+
+A WRITE ACL controls whether a user can modify existing records.
+
+The ACL ensures that record modifications are restricted according to the configured permissions.
+
+## 9. DELETE ACL
+
+A DELETE ACL controls whether a user can delete records.
+
+Unauthorized users are prevented from deleting restricted records.
+
+## 10. Administrator Access
+
+Administrators are provided with the required access to manage the table, records, users, roles, and ACL configuration.
+
+## 11. Solution Result
+
+The completed ACL configuration provides separate controls for READ, CREATE, WRITE, and DELETE operations and supports the project's role-based and field-based access requirements.
