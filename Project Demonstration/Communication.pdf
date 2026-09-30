@@ -1,0 +1,50 @@
+# Communication
+
+## 1. Project Introduction
+
+The project titled **“Script-Controlled ACL – Restrict Record Access Based on Field Value”** demonstrates how ServiceNow ACLs can be used to control access to institution records.
+
+## 2. Problem Explanation
+
+Users may require different permissions when accessing institution records. Without suitable access controls, unauthorized users may be able to perform operations that are not permitted for them.
+
+## 3. Solution Explanation
+
+The project uses ServiceNow Access Control Lists to control four major operations:
+
+* READ
+* CREATE
+* WRITE
+* DELETE
+
+The access-control logic considers the configured user roles and field-based conditions.
+
+## 4. Technical Explanation
+
+The project uses:
+
+* ServiceNow
+* Custom table `u_institution_details`
+* ServiceNow Roles
+* ACLs
+* JavaScript
+* Branch-based conditions
+
+The **Branch** field contains ECE, EEE, and CSE values.
+
+## 5. Team Communication
+
+The team members coordinate their assigned tasks during development and testing.
+
+* **Sakthi Shrinidhi C** – Team Leader, CREATE ACL and Project Outcome
+* **Meenakshi S** – User Creation and WRITE ACL
+* **K Srividhya** – Roles Creation and READ ACL
+* **Swarna Priya A** – Table Creation and DELETE ACL
+
+## 6. Demonstration Communication
+
+During the demonstration, the team explains the project objective, implementation process, ACL configuration, testing procedure, and final outcome in a clear and organized manner.
+
+## 7. Conclusion
+
+Effective communication helps the team explain the technical implementation and demonstrate how the Script-Controlled ACL solution provides controlled access to institution records.
