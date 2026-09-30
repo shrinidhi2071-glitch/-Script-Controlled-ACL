@@ -1,0 +1,61 @@
+# Data Flow Diagram
+
+## 1. Introduction
+
+The Data Flow Diagram represents how user requests are processed by the ServiceNow system before access is granted to institution records.
+
+## 2. User
+
+The user logs into ServiceNow and requests access to records in the `u_institution_details` table.
+
+## 3. ServiceNow Login
+
+ServiceNow authenticates the user and identifies the logged-in user account.
+
+## 4. Role Verification
+
+The system checks the roles assigned to the user to determine the permissions available to them.
+
+## 5. Institution Details Table
+
+The requested data is stored in the custom `u_institution_details` table.
+
+The table contains student-related information such as:
+
+* Student Roll Number
+* Student Name
+* Faculty Name
+* Branch
+* Email
+* Phone Number
+* Description
+
+## 6. ACL Evaluation
+
+ServiceNow evaluates the appropriate Access Control List (ACL) based on the operation requested by the user.
+
+The project includes separate ACL controls for:
+
+* READ
+* CREATE
+* WRITE
+* DELETE
+
+## 7. Branch Condition
+
+The ACL can evaluate the **Branch** field of the requested record according to the configured access-control requirements.
+
+## 8. Access Decision
+
+After evaluating the user's role and applicable ACL conditions, ServiceNow makes an access decision.
+
+* **Allowed:** The requested operation is permitted.
+* **Denied:** The requested operation is blocked.
+
+## 9. Data Flow
+
+**User → ServiceNow Login → Role Verification → Institution Details Table → ACL Evaluation → Branch Condition → Access Decision → Record Access**
+
+## 10. Expected Result
+
+The data flow ensures that access to institution records is controlled according to the configured security rules and user permissions.
