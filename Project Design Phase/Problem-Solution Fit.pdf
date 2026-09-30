@@ -1,0 +1,60 @@
+# Problem-Solution Fit
+
+## 1. Introduction
+
+The project addresses the requirement for controlled and secure access to institution records in ServiceNow.
+
+## 2. Existing Problem
+
+A general record-access system may allow users to access records without considering their specific role or the values stored in individual records.
+
+This can result in users accessing records that are outside their assigned permissions.
+
+## 3. User Requirement
+
+Users should be able to access and perform operations only when they have the required permissions.
+
+Administrators should have the necessary access to manage the system.
+
+## 4. Proposed Approach
+
+The proposed solution uses ServiceNow Access Control Lists (ACLs) combined with script-based conditions.
+
+Different ACLs are configured for:
+
+* READ
+* CREATE
+* WRITE
+* DELETE
+
+## 5. Access Control Approach
+
+The system evaluates the user's role and the applicable ACL conditions before granting access.
+
+This allows permissions to be controlled at the required level.
+
+## 6. Branch-Based Access
+
+The **Branch** field is used as a record-level condition.
+
+The project includes the following branch choices:
+
+* ECE
+* EEE
+* CSE
+
+The ACL configuration can use these field values to restrict access according to the defined project requirements.
+
+## 7. Solution Fit
+
+The proposed solution fits the identified problem because it provides:
+
+* Role-based access control
+* Field-based record restrictions
+* Separate CRUD permissions
+* Administrator access
+* Script-controlled security logic
+
+## 8. Expected Benefit
+
+The solution provides a structured approach for protecting institution records and controlling access according to user permissions and record conditions.
