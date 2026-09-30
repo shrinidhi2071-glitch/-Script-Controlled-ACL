@@ -1,0 +1,55 @@
+# Project Planning
+
+## 1. Project Objective
+
+The objective of the project is to develop a ServiceNow-based Script-Controlled ACL solution that restricts access to institution records according to user roles and defined field-based conditions.
+
+## 2. Project Team
+
+### Team Leader
+
+**Sakthi Shrinidhi C**
+
+### Team Members
+
+* Meenakshi S
+* K Srividhya
+* Swarna Priya A
+
+## 3. Task Allocation
+
+| Task            | Team Member        |
+| --------------- | ------------------ |
+| User Creation   | Meenakshi S        |
+| Roles Creation  | K Srividhya        |
+| Table Creation  | Swarna Priya A     |
+| READ ACL        | K Srividhya        |
+| CREATE ACL      | Sakthi Shrinidhi C |
+| WRITE ACL       | Meenakshi S        |
+| DELETE ACL      | Swarna Priya A     |
+| Project Outcome | Sakthi Shrinidhi C |
+
+## 4. Development Sequence
+
+The project is planned in the following sequence:
+
+1. Create the required users.
+2. Create and assign the required roles.
+3. Create the `u_institution_details` custom table.
+4. Configure the required table fields.
+5. Create sample records.
+6. Configure the READ ACL.
+7. Configure the CREATE ACL.
+8. Configure the WRITE ACL.
+9. Configure the DELETE ACL.
+10. Test the access-control rules.
+11. Document the project outcome.
+12. Demonstrate the completed solution.
+
+## 5. Expected Outcome
+
+The completed project should provide controlled access to institution records using ServiceNow ACLs, user roles, and field-based conditions.
+
+## 6. Team Coordination
+
+Each team member is responsible for the assigned development tasks. The team leader coordinates the overall implementation, ensures the tasks are integrated correctly, and presents the project outcome.
